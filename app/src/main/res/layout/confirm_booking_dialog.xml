@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBFBFF"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm booking"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingBottom="8dp"
+            android:textColor="#494949"
+            android:textAlignment="textStart"
+            android:layout_weight="2"/>
+        <ImageView
+            android:id="@+id/cancle_dialog"
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:src="@drawable/cancel_icon"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_1sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/_12sdp"
+                android:text="Desk ID "
+                android:textColor="#898989" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/_12sdp"
+                android:text=":"
+                android:textColor="#898989" />
+            <TextView
+                android:id="@+id/confirm_deskid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="textStart"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:textSize="@dimen/_12sdp"
+                android:text="21564"
+                android:textColor="#1E1E1E" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:textSize="@dimen/_12sdp"
+                android:text="Desk "
+                android:textColor="#898989" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/_12sdp"
+                android:text=":"
+                android:textColor="#898989" />
+            <TextView
+                android:id="@+id/confirm_desk_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="textStart"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:textSize="@dimen/_12sdp"
+                android:text="14"
+                android:textColor="#1E1E1E" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/_12sdp"
+            android:text="Slot "
+            android:textColor="#898989" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/_12sdp"
+            android:text=":"
+            android:textColor="#898989" />
+        <TextView
+            android:id="@+id/slot_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="textStart"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:textSize="@dimen/_12sdp"
+            android:text="14"
+            android:textColor="#1E1E1E" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/confirmButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/open_sans_semibold"
+            android:padding="@dimen/_9sdp"
+            android:text="Confirm"
+            android:textSize="@dimen/_12sdp"
+            android:backgroundTint="@color/colorbgbutton">
+
+        </com.google.android.material.button.MaterialButton>
+
+</LinearLayout>

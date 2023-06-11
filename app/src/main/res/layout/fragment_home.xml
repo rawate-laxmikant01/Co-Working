@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.homescreen.HomeFragment">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_vertical"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/df_icon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/iv_applogo_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Co-working"
+                android:textAllCaps="false"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_booking_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="@dimen/_1sdp"
+                android:text="Booking history"
+                android:textSize="@dimen/_10sdp"
+                app:backgroundTint="@color/colorbgbutton"
+                app:cornerRadius="@dimen/_5sdp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/book_work_card"
+            android:layout_width="147dp"
+            android:layout_height="147dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/rectangle_inactive"
+            android:clickable="true"
+            android:onClick="toggleCardState"
+            android:padding="16dp"
+            android:text="Card 1"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/book_station_icon"
+                android:padding="@dimen/_15sdp"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/book_work_s"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="-7sp"
+            android:text="@string/book_work_s"
+            android:textAppearance="@style/book_work_s"
+            app:layout_constraintEnd_toEndOf="@+id/book_work_card"
+            app:layout_constraintStart_toStartOf="@+id/book_work_card"
+            app:layout_constraintTop_toBottomOf="@+id/book_work_card" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/meeting_room_card"
+            android:layout_width="147dp"
+            android:layout_height="147dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rectangle_inactive"
+            android:clickable="true"
+            android:onClick="toggleCardState"
+            android:padding="16dp"
+            android:text="Card 1"
+            app:layout_constraintBottom_toBottomOf="@+id/book_work_card"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/book_work_card"
+            app:layout_constraintTop_toTopOf="@+id/book_work_card" >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/meeting_icon_white"
+                android:padding="@dimen/_15sdp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/meeting_room"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="-7sp"
+            android:text="Meeting room"
+            android:textAppearance="@style/book_work_s"
+            app:layout_constraintEnd_toEndOf="@+id/meeting_room_card"
+            app:layout_constraintStart_toStartOf="@+id/meeting_room_card"
+            app:layout_constraintTop_toBottomOf="@+id/meeting_room_card" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slot_card"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/inactive_slot"
+    app:cardCornerRadius="@dimen/_12sdp"
+    android:gravity="center|center_horizontal|center_vertical"
+    android:layout_margin="@dimen/_8sdp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/dateTextView_desk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:padding="@dimen/_6sdp"
+        android:text="1"
+        android:textColor="@color/black" />
+
+</androidx.cardview.widget.CardView>
